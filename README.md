@@ -45,4 +45,3 @@ docker compose pull
 # Deploy
 docker compose up -d
 ```
-
