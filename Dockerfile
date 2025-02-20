@@ -23,6 +23,9 @@ COPY --link . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED=1
 
+# install openssl
+RUN apk add --no-cache openssl
+
 RUN npx prisma generate
 RUN npm run build
 
